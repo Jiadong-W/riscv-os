@@ -1,3 +1,4 @@
+#include "uart.h"
 #define UART0 0x10000000UL
 
 static inline void mmio_write(unsigned long addr, unsigned char val) {

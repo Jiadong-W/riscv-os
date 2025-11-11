@@ -7,7 +7,7 @@ OBJCOPY = $(CROSS)objcopy
 CFLAGS = -march=rv64imafdc -mabi=lp64d -mcmodel=medany -ffreestanding -nostdlib -Wall -Iinclude
 LDFLAGS = -T kernel/kernel.ld
 
-SRCS = kernel/boot/entry.S kernel/uart.c kernel/start.c
+SRCS = kernel/boot/entry.S kernel/uart.c kernel/start.c kernel/printf.c
 OBJS = $(SRCS:.c=.o)
 OBJS := $(OBJS:.S=.o)
 

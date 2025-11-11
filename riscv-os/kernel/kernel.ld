@@ -10,7 +10,7 @@ SECTIONS
   }
 
   . = 0x80010000;
-  .data : {
+  .data : { 
     *(.data .data.*)
   }
 
